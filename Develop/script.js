@@ -30,11 +30,29 @@
 // }
 
 // Get character length value from slider
-const slider = document.getElementById("myRange");
+var slider = document.getElementById("myRange");
 
 // Show Value of slider
-const sliderValue = document.getElementById("myLength")
+var sliderValue = document.getElementById("myLength");
 
+// Display the default slider value
+sliderValue.innerHTML = slider.value;
+slider.oninput = function () {
+  sliderValue.innerHTML = this.value;
+}
+
+//Variable for different types of characters using ASCII code
+
+var upper = arrayRange(65.90)
+var lower = arrayRange(97, 122)
+var numbs = arrayRamge(48, 57)
+var symbols = arrayRamge(33, 47).concat(
+  arrayRamge(58, 64)
+).concat(
+  arrayRamge(91, 96)
+).concat(
+  arrayRamge(123, 126)
+)
 
 
 
