@@ -41,20 +41,48 @@ slider.oninput = function () {
   sliderValue.innerHTML = this.value;
 }
 
-//Variable for different types of characters using ASCII code
+// // Variables for different characters.
+var upperCase = document.getElementById("upper");
+var lowCase = document.getElementById("lower");
+var numbs = document.getElementById("nums");
+var symbols = document.getElementById("symbols");
 
-var upper = arrayRange(65.90)
-var lower = arrayRange(97, 122)
-var numbs = arrayRamge(48, 57)
-var symbols = arrayRamge(33, 47).concat(
-  arrayRamge(58, 64)
+var passwordText = document.querySelector("password");
+
+// Variables in relation to AASCII Code
+const upperChar = arrayRange(65, 90)
+const lowerChar = arrayRange(97, 122)
+const numChar = arrayRange(48, 57)
+const symbolChar = arrayRange(33, 47).concat(
+  arrayRange(58, 64)
 ).concat(
-  arrayRamge(91, 96)
+  arrayRange(91, 96)
 ).concat(
-  arrayRamge(123, 126)
+  arrayRange(123, 126)
 )
+// function goes through and grabs from refrenced ranges
+function arrayRange(low, high) {
+  const array = []
+  for (let i = low; i <= high; i++) {
+    array.push(i)
+  }
+  return array
+}
 
+// stops form from submitting and refreshing page.
+passwordText.addEventListener('submit', e => {
+  e.preventDefault()
+  var slider = myRange.value
+  var upperCase = upperCaseElement.checked
+  var lowCase = lowCaseElement.checked
+  var numbs = numbsElement.checked
+  var symbols = symbolsElement.checked
+  var password = generatePassword(upperCase, lowCase, numbs, symbols)
+})
 
+function generatePassword(upperCase, lowCase, numbs, symbols) {
+
+}
 
 
 
