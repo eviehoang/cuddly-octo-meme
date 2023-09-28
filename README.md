@@ -1,2 +1,1 @@
-# cuddly-octo-meme
-Challenge 3 Assignment
+# Password Generator Starter Code
