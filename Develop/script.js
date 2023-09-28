@@ -29,7 +29,19 @@
 //   alert("Please enter a character value between 8 and 128.")
 // }
 
-// // Write password to the #password input
+// Get character length value from slider
+const slider = document.getElementById("myRange");
+
+// Show Value of slider
+const sliderValue = document.getElementById("myLength")
+
+
+
+
+
+
+
+// // // Write password to the #password input
 // function writePassword() {
 
 //   var password = generatePassword();
@@ -39,10 +51,5 @@
 
 // }
 
-// Reference variables in DOM. Create a constant for the criteras chosen
-const charRange = document.getElementById("myRange");
-const charLength = document.getElementById("myLength");
-const upper = document.getElementById("upper");
-const lower = document.getElementById("lower");
-const symbols = document.getElementById("symbols");
-const nums = document.getElementById("nums");
+// // Get references to the #generate element
+// var generateBtn = document.querySelector("#generate");
