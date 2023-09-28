@@ -52,6 +52,7 @@ header {
 
 .card-body {
   min-height: 100px;
+  text-align: center;
 }
 
 .card-footer {
@@ -104,18 +105,67 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 4%;
+  margin: 1%;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+
+/* Number Slider */
+.slidecontainer {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slidecontainer p{
+  font-size: .75em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 75%;
+  margin: auto;
+  height: 10px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+}
+
+/* hover effect */
+.slider:hover{
+  opacity: 1;
+}
+
+#myLength, #myRange {
+  background: rgb(226, 219, 219);
+  outline: none;
+}
+
+/* Checkbox CSS */
+section {
+  text-align: center;
+  padding: 1px;
+}
+
+section h4 {
+  margin-bottom: 4px;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+#upper, #lower, #nums, #symbols {
+  text-align: center;
+  font-size: .7em;
+  margin-bottom: 2%;
 }
 
 @media (max-width: 690px) {

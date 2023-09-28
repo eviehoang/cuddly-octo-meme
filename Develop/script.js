@@ -1,37 +1,48 @@
+// // Get references to the #generate element
+// var generateBtn = document.querySelector("#generate");
 
-// Add event listener to generate button
-var generateBtn = document.querySelector("#password");
+// // Variables for different characters.
+// var upperCase = confirm("Use Upper Case Letters?");
+// var lowCase = confirm("Use Lower Case Letters?");
+// var numbs = confirm("Do you want to use numbers?");
+// var symbols = confirm("Do you want to use symbols?");
+// var passLength = prompt("Choose the password character length from between 8 and 128.");
+// var passInput = passLength;
 
-// Character Variables
-var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lower = "abcdefghijklmnopqrstuvwxyz";
-var symbols = "!@#$%^&*()<>?";
-var number = "0123456789";
-var length = 8;
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
 
-var allChars = upper + lower + symbols + number;
+// // Generate Password
+// if (passInput >= 8 && passInput <= 128) {
+//   function generatePassword() {
+//     var pass = "";
+//     var allChars = upperCase + lowCase + numbs + symbols;
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+//     for (var i = 0; i <= passInput; i++) {
+//       pass += Math.floor(Math.random() * allChars.length);
+//     }
+//     return pass;
+//   }
+// }
 
+// else {
+//   alert("Please enter a character value between 8 and 128.")
+// }
 
-// Generate Password
-function generatePassword() {
-  var pass = "";
-  for (var i = 0, n = allChars.length; i < length; ++i){
-    pass += allChars.charAt(Math.floor(Math.random() * n));
-  }
-}
+// // Write password to the #password input
+// function writePassword() {
 
-// Write password to the #password input
-function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+//   passwordText.value = password;
 
-  passwordText.value = password;
+// }
 
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// Reference variables in DOM. Create a constant for the criteras chosen
+const charRange = document.getElementById("myRange");
+const charLength = document.getElementById("myLength");
+const upper = document.getElementById("upper");
+const lower = document.getElementById("lower");
+const symbols = document.getElementById("symbols");
+const nums = document.getElementById("nums");
