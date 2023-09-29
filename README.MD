@@ -1,5 +1,5 @@
 
-#Simple Random Password Generator
+# Simple Random Password Generator
 ![](./Application%20Sshot.png)
 Created a straightforward password generator that accepts user input and generates a random combination of letters, symbols, and/or numbers. The code adapts to the user's chosen parameters through a sequence of alert prompts. The application also runs checks to make sure the chosen number of characters for the password falls within an acceptable range (8 to 128).
 
