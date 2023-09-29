@@ -27,7 +27,7 @@ Not Available
 
 ## Deployed Link
 
-* [See Live Site](https://eviehoang.github.io/evie-portfolio/)
+* [See Live Site](https://eviehoang.github.io/cuddly-octo-meme/)
 
 
 ## Authors
