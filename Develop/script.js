@@ -3,11 +3,8 @@
 document.querySelector("#generate").addEventListener("click", writePassword);
 
 // Various Arrays and variables
-// var number = ["01234567890"];
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-// var symChar = ["!@#$%^&*()-=_+<>?,./}{"];
 var symChar = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
-// var lower = ["abcdefghijklmnopqrstuvwxyz"];
 var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var inputLength = "";
@@ -41,8 +38,8 @@ function generatePassword() {
     var lowerCase = confirm("Do you want to use Lowercase Letters?");
   }
 
-
-  var passChars = []
+// Pull entire array into a single variable
+  var passChars = [];
 
   if (symbols) {
     passChars = passChars.concat(symChar)
@@ -56,8 +53,6 @@ function generatePassword() {
   if (lowerCase) {
     passChars = passChars.concat(lower)
   }
-
-  console.log(passChars)
 
   // Variable to fill with password.
   var newPassword = "";
